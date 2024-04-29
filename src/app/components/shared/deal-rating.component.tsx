@@ -11,7 +11,7 @@ export default function DealRating({
     return (
         <div className={styles.ratingWrapper}>
             {vRating && <div className={styles.vRating}>{vRating}</div>}
-            <div className={styles.starRating}>
+            <div className={styles.starRating} data-testid='rating'>
                 <RatingComponent starRating={starRating} />
             </div>
         </div>

@@ -14,7 +14,7 @@ export default function DealPriceComponent({
 
     return (
         <div className={styles.priceBlock}>
-            <p className={styles.pricePP}>
+            <p className={styles.pricePP} data-testid='deal-price'>
                 {CURRENCY}
                 {price}pp
             </p>

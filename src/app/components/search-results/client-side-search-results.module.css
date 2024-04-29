@@ -1,22 +1,17 @@
 /* Small fix to support mobile, has to be improved */
 
 .container {
-  align-items: start;
+  align-items: flex-start;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
-.filters {
-  flex: 0 0 30%;
-  max-width: 30%;
-}
+.filters { width: 100%;}
 
 .result {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  flex: 0 0 70%;
-  max-width: 70%;
 }
 
 .empty {
@@ -26,6 +21,12 @@
 }
 
 @media (min-width: 1024px) {
+  .container {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+  }
+  
   .filters {
     flex: 0 0 20%;
     max-width: 20%;

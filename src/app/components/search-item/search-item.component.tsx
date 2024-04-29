@@ -17,7 +17,7 @@ export default function SearchItemComponent({
 
     return (
         <section
-            data-testid={`deal-${deal.hotel.id}`}
+            data-testid='deal'
             id={`deal-${deal.hotel.id}`}
             className={styles.holidayDeal}
         >
